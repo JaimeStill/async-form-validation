@@ -303,15 +303,12 @@ BackdropDirective.ɵdir = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_
 
 const Directives = [BackdropDirective];
 
-<<<<<<< HEAD
 const GenerateOrgForm = (org, fb) => fb.group({
   id: [org.id],
   name: [org.name, _angular_forms__WEBPACK_IMPORTED_MODULE_3__.Validators.required],
   label: [org.label, _angular_forms__WEBPACK_IMPORTED_MODULE_3__.Validators.required]
 });
 
-=======
->>>>>>> c5cc067586cd814f1f1322262e7acff177b0ea71
 class BytesPipe {
   transform(value, precision = 2) {
     if (!value || value === 0) return '0 Bytes';
@@ -377,22 +374,14 @@ class CoreService {
     this.ssnPattern = /^(?!(000|666|9))\d{3}-(?!(00))\d{2}-(?!(0000))\d{4}$/g;
 
     this.getUploadOptions = () => {
-<<<<<<< HEAD
       const headers = new _angular_common_http__WEBPACK_IMPORTED_MODULE_4__.HttpHeaders();
-=======
-      const headers = new _angular_common_http__WEBPACK_IMPORTED_MODULE_3__.HttpHeaders();
->>>>>>> c5cc067586cd814f1f1322262e7acff177b0ea71
       headers.set('Accept', 'application/json');
       headers.delete('Content-Type');
       return headers;
     };
 
     this.getTextOptions = () => {
-<<<<<<< HEAD
       const headers = new _angular_common_http__WEBPACK_IMPORTED_MODULE_4__.HttpHeaders();
-=======
-      const headers = new _angular_common_http__WEBPACK_IMPORTED_MODULE_3__.HttpHeaders();
->>>>>>> c5cc067586cd814f1f1322262e7acff177b0ea71
       headers.set('Content-Type', 'text/plain');
       headers.delete('Pragma');
       return headers;
@@ -405,11 +394,7 @@ class CoreService {
       return newValue;
     };
 
-<<<<<<< HEAD
     this.generateInputObservable = input => (0,rxjs__WEBPACK_IMPORTED_MODULE_5__.fromEvent)(input.nativeElement, 'keyup').pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_6__.debounceTime)(300), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_7__.map)(event => event.target.value), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_8__.distinctUntilChanged)());
-=======
-    this.generateInputObservable = input => (0,rxjs__WEBPACK_IMPORTED_MODULE_4__.fromEvent)(input.nativeElement, 'keyup').pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_5__.debounceTime)(300), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_6__.map)(event => event.target.value), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_7__.distinctUntilChanged)());
->>>>>>> c5cc067586cd814f1f1322262e7acff177b0ea71
   }
 
 }
@@ -436,11 +421,7 @@ CoreService.ɵprov = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["
 class SnackerService {
   constructor(snackbar) {
     this.snackbar = snackbar;
-<<<<<<< HEAD
     this.config = new _angular_material_snack_bar__WEBPACK_IMPORTED_MODULE_9__.MatSnackBarConfig();
-=======
-    this.config = new _angular_material_snack_bar__WEBPACK_IMPORTED_MODULE_8__.MatSnackBarConfig();
->>>>>>> c5cc067586cd814f1f1322262e7acff177b0ea71
 
     this.sendMessage = message => this.snackbar.open(message, 'Close', this.config);
 
@@ -480,11 +461,7 @@ class SnackerService {
 }
 
 SnackerService.ɵfac = function SnackerService_Factory(t) {
-<<<<<<< HEAD
   return new (t || SnackerService)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_material_snack_bar__WEBPACK_IMPORTED_MODULE_9__.MatSnackBar));
-=======
-  return new (t || SnackerService)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_material_snack_bar__WEBPACK_IMPORTED_MODULE_8__.MatSnackBar));
->>>>>>> c5cc067586cd814f1f1322262e7acff177b0ea71
 };
 
 SnackerService.ɵprov = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({
@@ -501,11 +478,7 @@ SnackerService.ɵprov = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0_
     }]
   }], function () {
     return [{
-<<<<<<< HEAD
       type: _angular_material_snack_bar__WEBPACK_IMPORTED_MODULE_9__.MatSnackBar
-=======
-      type: _angular_material_snack_bar__WEBPACK_IMPORTED_MODULE_8__.MatSnackBar
->>>>>>> c5cc067586cd814f1f1322262e7acff177b0ea71
     }];
   }, null);
 })();
@@ -536,11 +509,7 @@ class ThemeService {
 }
 
 ThemeService.ɵfac = function ThemeService_Factory(t) {
-<<<<<<< HEAD
   return new (t || ThemeService)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_10__.OverlayContainer));
-=======
-  return new (t || ThemeService)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_9__.OverlayContainer));
->>>>>>> c5cc067586cd814f1f1322262e7acff177b0ea71
 };
 
 ThemeService.ɵprov = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({
@@ -557,11 +526,7 @@ ThemeService.ɵprov = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__[
     }]
   }], function () {
     return [{
-<<<<<<< HEAD
       type: _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_10__.OverlayContainer
-=======
-      type: _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_9__.OverlayContainer
->>>>>>> c5cc067586cd814f1f1322262e7acff177b0ea71
     }];
   }, null);
 })();
@@ -576,22 +541,14 @@ MaterialModule.ɵmod = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__
   type: MaterialModule
 });
 MaterialModule.ɵinj = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({
-<<<<<<< HEAD
   imports: [_angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_11__.DragDropModule, _angular_flex_layout__WEBPACK_IMPORTED_MODULE_12__.FlexLayoutModule, _angular_flex_layout__WEBPACK_IMPORTED_MODULE_13__.GridModule, _angular_material_autocomplete__WEBPACK_IMPORTED_MODULE_14__.MatAutocompleteModule, _angular_material_badge__WEBPACK_IMPORTED_MODULE_15__.MatBadgeModule, _angular_material_bottom_sheet__WEBPACK_IMPORTED_MODULE_16__.MatBottomSheetModule, _angular_material_button__WEBPACK_IMPORTED_MODULE_2__.MatButtonModule, _angular_material_button_toggle__WEBPACK_IMPORTED_MODULE_17__.MatButtonToggleModule, _angular_material_card__WEBPACK_IMPORTED_MODULE_18__.MatCardModule, _angular_material_checkbox__WEBPACK_IMPORTED_MODULE_19__.MatCheckboxModule, _angular_material_chips__WEBPACK_IMPORTED_MODULE_20__.MatChipsModule, _angular_material_core__WEBPACK_IMPORTED_MODULE_21__.MatCommonModule, _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_22__.MatDatepickerModule, _angular_material_dialog__WEBPACK_IMPORTED_MODULE_1__.MatDialogModule, _angular_material_divider__WEBPACK_IMPORTED_MODULE_23__.MatDividerModule, _angular_material_expansion__WEBPACK_IMPORTED_MODULE_24__.MatExpansionModule, _angular_material_form_field__WEBPACK_IMPORTED_MODULE_25__.MatFormFieldModule, _angular_material_grid_list__WEBPACK_IMPORTED_MODULE_26__.MatGridListModule, _angular_material_icon__WEBPACK_IMPORTED_MODULE_27__.MatIconModule, _angular_material_input__WEBPACK_IMPORTED_MODULE_28__.MatInputModule, _angular_material_core__WEBPACK_IMPORTED_MODULE_21__.MatLineModule, _angular_material_list__WEBPACK_IMPORTED_MODULE_29__.MatListModule, _angular_material_menu__WEBPACK_IMPORTED_MODULE_30__.MatMenuModule, _angular_material_core__WEBPACK_IMPORTED_MODULE_21__.MatNativeDateModule, _angular_material_core__WEBPACK_IMPORTED_MODULE_21__.MatOptionModule, _angular_material_paginator__WEBPACK_IMPORTED_MODULE_31__.MatPaginatorModule, _angular_material_progress_bar__WEBPACK_IMPORTED_MODULE_32__.MatProgressBarModule, _angular_material_progress_spinner__WEBPACK_IMPORTED_MODULE_33__.MatProgressSpinnerModule, _angular_material_core__WEBPACK_IMPORTED_MODULE_21__.MatPseudoCheckboxModule, _angular_material_radio__WEBPACK_IMPORTED_MODULE_34__.MatRadioModule, _angular_material_core__WEBPACK_IMPORTED_MODULE_21__.MatRippleModule, _angular_material_select__WEBPACK_IMPORTED_MODULE_35__.MatSelectModule, _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_36__.MatSidenavModule, _angular_material_slider__WEBPACK_IMPORTED_MODULE_37__.MatSliderModule, _angular_material_slide_toggle__WEBPACK_IMPORTED_MODULE_38__.MatSlideToggleModule, _angular_material_snack_bar__WEBPACK_IMPORTED_MODULE_9__.MatSnackBarModule, _angular_material_sort__WEBPACK_IMPORTED_MODULE_39__.MatSortModule, _angular_material_stepper__WEBPACK_IMPORTED_MODULE_40__.MatStepperModule, _angular_material_table__WEBPACK_IMPORTED_MODULE_41__.MatTableModule, _angular_material_tabs__WEBPACK_IMPORTED_MODULE_42__.MatTabsModule, _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_43__.MatToolbarModule, _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_44__.MatTooltipModule, _angular_material_tree__WEBPACK_IMPORTED_MODULE_45__.MatTreeModule]
-=======
-  imports: [_angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_10__.DragDropModule, _angular_flex_layout__WEBPACK_IMPORTED_MODULE_11__.FlexLayoutModule, _angular_flex_layout__WEBPACK_IMPORTED_MODULE_12__.GridModule, _angular_material_autocomplete__WEBPACK_IMPORTED_MODULE_13__.MatAutocompleteModule, _angular_material_badge__WEBPACK_IMPORTED_MODULE_14__.MatBadgeModule, _angular_material_bottom_sheet__WEBPACK_IMPORTED_MODULE_15__.MatBottomSheetModule, _angular_material_button__WEBPACK_IMPORTED_MODULE_2__.MatButtonModule, _angular_material_button_toggle__WEBPACK_IMPORTED_MODULE_16__.MatButtonToggleModule, _angular_material_card__WEBPACK_IMPORTED_MODULE_17__.MatCardModule, _angular_material_checkbox__WEBPACK_IMPORTED_MODULE_18__.MatCheckboxModule, _angular_material_chips__WEBPACK_IMPORTED_MODULE_19__.MatChipsModule, _angular_material_core__WEBPACK_IMPORTED_MODULE_20__.MatCommonModule, _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_21__.MatDatepickerModule, _angular_material_dialog__WEBPACK_IMPORTED_MODULE_1__.MatDialogModule, _angular_material_divider__WEBPACK_IMPORTED_MODULE_22__.MatDividerModule, _angular_material_expansion__WEBPACK_IMPORTED_MODULE_23__.MatExpansionModule, _angular_material_form_field__WEBPACK_IMPORTED_MODULE_24__.MatFormFieldModule, _angular_material_grid_list__WEBPACK_IMPORTED_MODULE_25__.MatGridListModule, _angular_material_icon__WEBPACK_IMPORTED_MODULE_26__.MatIconModule, _angular_material_input__WEBPACK_IMPORTED_MODULE_27__.MatInputModule, _angular_material_core__WEBPACK_IMPORTED_MODULE_20__.MatLineModule, _angular_material_list__WEBPACK_IMPORTED_MODULE_28__.MatListModule, _angular_material_menu__WEBPACK_IMPORTED_MODULE_29__.MatMenuModule, _angular_material_core__WEBPACK_IMPORTED_MODULE_20__.MatNativeDateModule, _angular_material_core__WEBPACK_IMPORTED_MODULE_20__.MatOptionModule, _angular_material_paginator__WEBPACK_IMPORTED_MODULE_30__.MatPaginatorModule, _angular_material_progress_bar__WEBPACK_IMPORTED_MODULE_31__.MatProgressBarModule, _angular_material_progress_spinner__WEBPACK_IMPORTED_MODULE_32__.MatProgressSpinnerModule, _angular_material_core__WEBPACK_IMPORTED_MODULE_20__.MatPseudoCheckboxModule, _angular_material_radio__WEBPACK_IMPORTED_MODULE_33__.MatRadioModule, _angular_material_core__WEBPACK_IMPORTED_MODULE_20__.MatRippleModule, _angular_material_select__WEBPACK_IMPORTED_MODULE_34__.MatSelectModule, _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_35__.MatSidenavModule, _angular_material_slider__WEBPACK_IMPORTED_MODULE_36__.MatSliderModule, _angular_material_slide_toggle__WEBPACK_IMPORTED_MODULE_37__.MatSlideToggleModule, _angular_material_snack_bar__WEBPACK_IMPORTED_MODULE_8__.MatSnackBarModule, _angular_material_sort__WEBPACK_IMPORTED_MODULE_38__.MatSortModule, _angular_material_stepper__WEBPACK_IMPORTED_MODULE_39__.MatStepperModule, _angular_material_table__WEBPACK_IMPORTED_MODULE_40__.MatTableModule, _angular_material_tabs__WEBPACK_IMPORTED_MODULE_41__.MatTabsModule, _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_42__.MatToolbarModule, _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_43__.MatTooltipModule, _angular_material_tree__WEBPACK_IMPORTED_MODULE_44__.MatTreeModule]
->>>>>>> c5cc067586cd814f1f1322262e7acff177b0ea71
 });
 
 (function () {
   (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](MaterialModule, [{
     type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.NgModule,
     args: [{
-<<<<<<< HEAD
       exports: [_angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_11__.DragDropModule, _angular_flex_layout__WEBPACK_IMPORTED_MODULE_12__.FlexLayoutModule, _angular_flex_layout__WEBPACK_IMPORTED_MODULE_13__.GridModule, _angular_material_autocomplete__WEBPACK_IMPORTED_MODULE_14__.MatAutocompleteModule, _angular_material_badge__WEBPACK_IMPORTED_MODULE_15__.MatBadgeModule, _angular_material_bottom_sheet__WEBPACK_IMPORTED_MODULE_16__.MatBottomSheetModule, _angular_material_button__WEBPACK_IMPORTED_MODULE_2__.MatButtonModule, _angular_material_button_toggle__WEBPACK_IMPORTED_MODULE_17__.MatButtonToggleModule, _angular_material_card__WEBPACK_IMPORTED_MODULE_18__.MatCardModule, _angular_material_checkbox__WEBPACK_IMPORTED_MODULE_19__.MatCheckboxModule, _angular_material_chips__WEBPACK_IMPORTED_MODULE_20__.MatChipsModule, _angular_material_core__WEBPACK_IMPORTED_MODULE_21__.MatCommonModule, _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_22__.MatDatepickerModule, _angular_material_dialog__WEBPACK_IMPORTED_MODULE_1__.MatDialogModule, _angular_material_divider__WEBPACK_IMPORTED_MODULE_23__.MatDividerModule, _angular_material_expansion__WEBPACK_IMPORTED_MODULE_24__.MatExpansionModule, _angular_material_form_field__WEBPACK_IMPORTED_MODULE_25__.MatFormFieldModule, _angular_material_grid_list__WEBPACK_IMPORTED_MODULE_26__.MatGridListModule, _angular_material_icon__WEBPACK_IMPORTED_MODULE_27__.MatIconModule, _angular_material_input__WEBPACK_IMPORTED_MODULE_28__.MatInputModule, _angular_material_core__WEBPACK_IMPORTED_MODULE_21__.MatLineModule, _angular_material_list__WEBPACK_IMPORTED_MODULE_29__.MatListModule, _angular_material_menu__WEBPACK_IMPORTED_MODULE_30__.MatMenuModule, _angular_material_core__WEBPACK_IMPORTED_MODULE_21__.MatNativeDateModule, _angular_material_core__WEBPACK_IMPORTED_MODULE_21__.MatOptionModule, _angular_material_paginator__WEBPACK_IMPORTED_MODULE_31__.MatPaginatorModule, _angular_material_progress_bar__WEBPACK_IMPORTED_MODULE_32__.MatProgressBarModule, _angular_material_progress_spinner__WEBPACK_IMPORTED_MODULE_33__.MatProgressSpinnerModule, _angular_material_core__WEBPACK_IMPORTED_MODULE_21__.MatPseudoCheckboxModule, _angular_material_radio__WEBPACK_IMPORTED_MODULE_34__.MatRadioModule, _angular_material_core__WEBPACK_IMPORTED_MODULE_21__.MatRippleModule, _angular_material_select__WEBPACK_IMPORTED_MODULE_35__.MatSelectModule, _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_36__.MatSidenavModule, _angular_material_slider__WEBPACK_IMPORTED_MODULE_37__.MatSliderModule, _angular_material_slide_toggle__WEBPACK_IMPORTED_MODULE_38__.MatSlideToggleModule, _angular_material_snack_bar__WEBPACK_IMPORTED_MODULE_9__.MatSnackBarModule, _angular_material_sort__WEBPACK_IMPORTED_MODULE_39__.MatSortModule, _angular_material_stepper__WEBPACK_IMPORTED_MODULE_40__.MatStepperModule, _angular_material_table__WEBPACK_IMPORTED_MODULE_41__.MatTableModule, _angular_material_tabs__WEBPACK_IMPORTED_MODULE_42__.MatTabsModule, _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_43__.MatToolbarModule, _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_44__.MatTooltipModule, _angular_material_tree__WEBPACK_IMPORTED_MODULE_45__.MatTreeModule]
-=======
-      exports: [_angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_10__.DragDropModule, _angular_flex_layout__WEBPACK_IMPORTED_MODULE_11__.FlexLayoutModule, _angular_flex_layout__WEBPACK_IMPORTED_MODULE_12__.GridModule, _angular_material_autocomplete__WEBPACK_IMPORTED_MODULE_13__.MatAutocompleteModule, _angular_material_badge__WEBPACK_IMPORTED_MODULE_14__.MatBadgeModule, _angular_material_bottom_sheet__WEBPACK_IMPORTED_MODULE_15__.MatBottomSheetModule, _angular_material_button__WEBPACK_IMPORTED_MODULE_2__.MatButtonModule, _angular_material_button_toggle__WEBPACK_IMPORTED_MODULE_16__.MatButtonToggleModule, _angular_material_card__WEBPACK_IMPORTED_MODULE_17__.MatCardModule, _angular_material_checkbox__WEBPACK_IMPORTED_MODULE_18__.MatCheckboxModule, _angular_material_chips__WEBPACK_IMPORTED_MODULE_19__.MatChipsModule, _angular_material_core__WEBPACK_IMPORTED_MODULE_20__.MatCommonModule, _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_21__.MatDatepickerModule, _angular_material_dialog__WEBPACK_IMPORTED_MODULE_1__.MatDialogModule, _angular_material_divider__WEBPACK_IMPORTED_MODULE_22__.MatDividerModule, _angular_material_expansion__WEBPACK_IMPORTED_MODULE_23__.MatExpansionModule, _angular_material_form_field__WEBPACK_IMPORTED_MODULE_24__.MatFormFieldModule, _angular_material_grid_list__WEBPACK_IMPORTED_MODULE_25__.MatGridListModule, _angular_material_icon__WEBPACK_IMPORTED_MODULE_26__.MatIconModule, _angular_material_input__WEBPACK_IMPORTED_MODULE_27__.MatInputModule, _angular_material_core__WEBPACK_IMPORTED_MODULE_20__.MatLineModule, _angular_material_list__WEBPACK_IMPORTED_MODULE_28__.MatListModule, _angular_material_menu__WEBPACK_IMPORTED_MODULE_29__.MatMenuModule, _angular_material_core__WEBPACK_IMPORTED_MODULE_20__.MatNativeDateModule, _angular_material_core__WEBPACK_IMPORTED_MODULE_20__.MatOptionModule, _angular_material_paginator__WEBPACK_IMPORTED_MODULE_30__.MatPaginatorModule, _angular_material_progress_bar__WEBPACK_IMPORTED_MODULE_31__.MatProgressBarModule, _angular_material_progress_spinner__WEBPACK_IMPORTED_MODULE_32__.MatProgressSpinnerModule, _angular_material_core__WEBPACK_IMPORTED_MODULE_20__.MatPseudoCheckboxModule, _angular_material_radio__WEBPACK_IMPORTED_MODULE_33__.MatRadioModule, _angular_material_core__WEBPACK_IMPORTED_MODULE_20__.MatRippleModule, _angular_material_select__WEBPACK_IMPORTED_MODULE_34__.MatSelectModule, _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_35__.MatSidenavModule, _angular_material_slider__WEBPACK_IMPORTED_MODULE_36__.MatSliderModule, _angular_material_slide_toggle__WEBPACK_IMPORTED_MODULE_37__.MatSlideToggleModule, _angular_material_snack_bar__WEBPACK_IMPORTED_MODULE_8__.MatSnackBarModule, _angular_material_sort__WEBPACK_IMPORTED_MODULE_38__.MatSortModule, _angular_material_stepper__WEBPACK_IMPORTED_MODULE_39__.MatStepperModule, _angular_material_table__WEBPACK_IMPORTED_MODULE_40__.MatTableModule, _angular_material_tabs__WEBPACK_IMPORTED_MODULE_41__.MatTabsModule, _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_42__.MatToolbarModule, _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_43__.MatTooltipModule, _angular_material_tree__WEBPACK_IMPORTED_MODULE_44__.MatTreeModule]
->>>>>>> c5cc067586cd814f1f1322262e7acff177b0ea71
     }]
   }], null, null);
 })();
@@ -606,11 +563,7 @@ CoreModule.ɵmod = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵ
   type: CoreModule
 });
 CoreModule.ɵinj = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({
-<<<<<<< HEAD
   imports: [[_angular_common__WEBPACK_IMPORTED_MODULE_46__.CommonModule, MaterialModule], MaterialModule]
-=======
-  imports: [[_angular_common__WEBPACK_IMPORTED_MODULE_45__.CommonModule, MaterialModule], MaterialModule]
->>>>>>> c5cc067586cd814f1f1322262e7acff177b0ea71
 });
 
 (function () {
@@ -618,11 +571,7 @@ CoreModule.ɵinj = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵ
     type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.NgModule,
     args: [{
       declarations: [...Components, ...Dialogs, ...Directives, ...Pipes],
-<<<<<<< HEAD
       imports: [_angular_common__WEBPACK_IMPORTED_MODULE_46__.CommonModule, MaterialModule],
-=======
-      imports: [_angular_common__WEBPACK_IMPORTED_MODULE_45__.CommonModule, MaterialModule],
->>>>>>> c5cc067586cd814f1f1322262e7acff177b0ea71
       exports: [...Components, ...Dialogs, ...Directives, ...Pipes, MaterialModule]
     }]
   }], null, null);
