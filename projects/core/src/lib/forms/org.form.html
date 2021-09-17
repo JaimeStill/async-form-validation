@@ -1,0 +1,12 @@
+<form [formGroup]="form">
+  <section fxLayout="column"
+           fxLayoutAlign="start stretch">
+    <mat-form-field class="my4">
+      <mat-label>Name</mat-label>
+      <input formControlName="name"
+             matInput>
+      <mat-error *ngIf="name?.errors?.required">Name is required</mat-error>
+      <mat-error *ngIf="name?.errors?.api">Name is already in use</mat-error>
+    </mat-form-field>
+  </section>
+</form>

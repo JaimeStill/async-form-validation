@@ -1,0 +1,22 @@
+<section fxLayout="row"
+         fxLayoutAlign="start center"
+         class="m4 elevated rounded p4"
+         [ngClass]="selected ? 'card-outline-primary' : 'card-outline-accent'"
+         [style.width.px]="size">
+  <p class="m4"
+     fxFlex>{{org.name}}</p>
+  <button mat-icon-button
+          color="warn"
+          matTooltip="Remove"
+          (click)="remove.emit(org)">
+    <mat-icon>delete_outlined</mat-icon>
+  </button>
+  <button mat-icon-button
+          (click)="select.emit(org)">
+    <mat-icon *ngIf="selected"
+              matTooltip="Deselect"
+              class="color-primary">radio_button_checked</mat-icon>
+    <mat-icon *ngIf="!(selected)"
+              matTooltip="Select">radio_button_unchecked</mat-icon>
+  </button>
+</section>

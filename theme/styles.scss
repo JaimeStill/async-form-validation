@@ -128,6 +128,10 @@
       color: map.get($value, "color")!important;
     }
 
+    button.mat-button-base.mat-button-disabled.color-#{$key}:disabled {
+      color: $disabled-button!important;
+    }
+
     mat-divider.mat-divider.#{$key} {
       border-color: map.get($value, "color");
     }

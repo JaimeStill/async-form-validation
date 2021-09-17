@@ -1,1 +1,34 @@
-<p class="mat-title m8">Home</p>
+<ng-template #loading>
+  <mat-progress-bar mode="indeterminate"
+                    color="accent"></mat-progress-bar>
+</ng-template>
+<section fxLayout="row"
+         fxLayoutAlign="start stretch">
+  <section fxLayout="column"
+           fxLayoutAlign="start stretch"
+           class="p8">
+    <p class="mat-title bold m4">Organizations</p>
+    <ng-container *ngIf="app.organizations$ | async as orgs else loading">
+      <ng-container *ngIf="orgs?.length > 0">
+        <org-card *ngFor="let o of orgs; trackBy: identify"
+                  [org]="o"
+                  [selected]="selected(o)"
+                  (select)="selectOrganization($event)"
+                  (remove)="removeOrganization($event)"></org-card>
+      </ng-container>
+      <p *ngIf="!(orgs?.length > 0)"
+         class="mat-subheading-2 m4 color-warn">
+        No Organizations Available
+      </p>
+    </ng-container>
+  </section>
+  <section fxLayout="column"
+           fxLayoutAlign="start stretch"
+           class="p8"
+           fxFlex>
+    <p class="mat-title bold m4">Organization Editor</p>
+    <org-editor class="m4"
+                [data]="organization"
+                (update)="refresh()"></org-editor>
+  </section>
+</section>

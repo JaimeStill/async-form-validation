@@ -1,0 +1,21 @@
+<section fxLayout="column"
+         fxLayoutAlign="start stretch"
+         class="p8 elevated rounded card-outline-accent"
+         [style.width.px]="size">
+  <org-form [data]="form"></org-form>
+  <section fxLayout="row"
+           fxLayoutAlign="end center">
+    <button mat-stroked-button
+            class="mx4"
+            [disabled]="!(state.hasState)"
+            (click)="clearCache()">
+      Clear Cache
+    </button>
+    <button mat-stroked-button
+            class="color-primary mx4"
+            [disabled]="form?.invalid"
+            (click)="save()">
+      Save
+    </button>
+  </section>
+</section>
